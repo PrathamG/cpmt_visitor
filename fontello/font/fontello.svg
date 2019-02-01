@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="home" unicode="&#xe800;" d="M464 797l447-446-112 0 0-448-669 0 0 448-112 0z m224-781l0 401-224 157-223-157 0-401 168 0 0 168 112 0 0-168 167 0z" horiz-adv-x="928" />
+
+<glyph glyph-name="market" unicode="&#xe801;" d="M950 715q23 0 39-18t14-42l-53-365q-2-18-17-31t-34-12l-590 0 9-53 528 0q22 0 37-16t16-36-16-37-37-15l-572 0q-20 0-35 13t-16 30l-98 582-72 0q-22 0-37 15t-16 37 16 36 37 16l116 0q19 0 34-12t17-32l11-60 719 0z m-60-105l-200 0 0-103 185 0z m-252 0l-157 0 0-103 157 0 0 103z m0-156l-157 0 0-104 157 0 0 104z m-208 156l-182 0 18-105q3 2 8 2l156 0 0 103z m-156-156l17-104 139 0 0 104-156 0z m416-104l164 0 14 104-178 0 0-104z m-416-390q0 78 77 78 79 0 79-78 0-79-79-79-77 0-77 79z m469 0q0 78 77 78 79 0 79-78 0-79-79-79-77 0-77 79z" horiz-adv-x="1003" />
+
+<glyph glyph-name="campaign" unicode="&#xe802;" d="M678-119l-522 0q-65 0-110 46t-46 111l0 625q0 65 46 110t110 46l522 0q65 0 110-46t46-110l0-625q0-65-46-111t-110-46z m-522 834q-21 0-37-15t-15-37l0-625q0-21 15-37t37-16l522 0q21 0 36 16t15 37l0 625q0 21-15 37t-36 15l-522 0z m469-312l-416 0q-26 0-26 25 0 11 7 19t19 7l416 0q11 0 19-7t7-19q0-25-26-25z m0 156l-416 0q-11 0-19 8t-7 18q0 25 26 25l416 0q26 0 26-25 0-11-7-18t-19-8z m0-312l-416 0q-11 0-19 7t-7 19q0 25 26 25l416 0q26 0 26-25 0-11-7-19t-19-7z m0-157l-416 0q-26 0-26 25 0 12 7 19t19 8l416 0q11 0 19-8t7-19q0-25-26-25z" horiz-adv-x="834" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "d6944e1d9af302093d43b299bbecbbbe02",
+      "css": "home",
+      "code": 59392,
+      "src": "iconic"
+    },
+    {
+      "uid": "e0d15ef5945000f5f264acc35494002f",
+      "css": "market",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "6a06892e76b81e023da6ddfb38a26b37",
+      "css": "campaign",
+      "code": 59394,
+      "src": "typicons"
+    }
+  ]
+}

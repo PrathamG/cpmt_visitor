@@ -1,0 +1,44 @@
+New Table jobs_campaign_drafts:
+CREATE TABLE jobs_campaign_drafts(
+	id int AUTO_INCREMENT,
+    caption varchar(5000),
+    feedback varchar(5000),
+    draftPath varchar(300),
+    PRIMARY KEY (id)
+);
+
+Alter Column status to int:
+ALTER TABLE jobs_influencer
+MODIFY COLUMN status tinyint(1);
+
+Add Columns brandPrice, influencerPrice, reportPath, draftId, brandMessage to jobs_influencer:
+ALTER TABLE jobs_influencer
+ADD COLUMN brandPrice float,
+ADD COLUMN influencerPrice float,
+ADD COLUMN reportPath varchar(500),
+ADD COLUMN draftId int,
+ADD COLUMN brandMessage varchar,
+ADD CONSTRAINT fk_drafts FOREIGN KEY (draftID) REFERENCES jobs_campaign_drafts(id);
+
+Add Column tier to influencer:
+ALTER TABLE influencer
+ADD COLUMN tier tinyint(1);
+
+Add Columns tier1Price, tier2Price, tier3Price to jobs_campaign:
+ALTER TABLE jobs_campaign
+ADD COLUMN tier1Price float,
+ADD COLUMN tier2Price float,
+ADD COLUMN tier3Price float;
+
+Add Column lastOnline to user:
+ALTER TABLE user 
+ADD COLUMN lastOnline INT
+
+Add Column contentGuide to jobs_campaign:
+ALTER TABLE jobs_campaign
+ADD COLUMN contentGuide VARCHAR(500);
+
+Add Columns draftDate, postDate to jobs_influencer:
+ALTER TABLE jobs_influencer
+ADD COLUMN draftDate INT(10),
+ADD COLUMN postDate INT(10);

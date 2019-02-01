@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<title>jQuery kumaGauge Plugin Demos</title>
+	</head>
+
+	<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/chart-graph/Creating-Animated-Gauges-Using-jQuery-Raphael-js-kumaGauge.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+		<h1 style="margin-top:150px;">jQuery kumaGauge Plugin Demos</h1>
+		<div class="js-gauge js-gauge--1 gauge"></div>
+		<div class="js-gauge js-gauge--2 gauge"></div>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+		<script type="text/javascript" src="js/kuma-gauge.jquery.js"></script>
+
+		<script>
+			$('.js-gauge--1').kumaGauge({
+				value : Math.floor((Math.random() * 99) + 1)
+			});
+
+			$('.js-gauge--1').kumaGauge('update', {
+				value : Math.floor((Math.random() * 99) + 1)
+			});
+
+			$('.js-gauge--2').kumaGauge({
+				value : Math.floor((Math.random() * 99) + 1),
+				fill : '#F34A53',
+				gaugeBackground : '#1E4147',
+				gaugeWidth : 10,
+				showNeedle : false,
+				label : {
+		            display : true,
+		            left : 'Min',
+		            right : 'Max',
+		            fontFamily : 'Helvetica',
+		            fontColor : '#1E4147',
+		            fontSize : '11',
+		            fontWeight : 'bold'
+		        }
+			});
+	
+
+			var update = setInterval(function() {
+				var newVal = Math.floor((Math.random() * 99) + 1);
+				$('.js-gauge--1').kumaGauge('update',{
+					value : newVal
+				});		
+			}, 1000);
+		</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</body>
+</html>
