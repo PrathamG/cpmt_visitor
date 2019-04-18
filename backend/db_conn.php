@@ -2,9 +2,9 @@
 	//db_conn.php
 	//File contains script to connect to DB. $mydb is the mysqli object.
 	header('Content-Type: text/html; charset=utf-8');
-	$server = 'production.c2cryczu3cau.ap-southeast-1.rds.amazonaws.com';
-	$user = 'cloudbreakr';
-	$password = 'adv1wherepr02o18';
+    $server = 'localhost';
+	$user = 'admin';
+    $password = "";
 	$dbname = 'cloudbreakr_new';
 
 	$mydb = new mysqli($server, $user, $password, $dbname);

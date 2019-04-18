@@ -232,7 +232,7 @@
 		$stmt->execute();
 		if($stmt->get_result()->fetch_assoc()['status'] == 2 && $userId == $_SESSION['userId'])
 		{
-			$target_dir = "http://icm.cloudbreakr.com/uploads/";
+			$target_dir = "../uploads/";
 			$target_file = $target_dir . $_POST['stamp'] . (basename($_FILES["draftUpload"]["name"]));
 			$uploadOk = 1;
 			$fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

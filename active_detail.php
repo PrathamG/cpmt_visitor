@@ -159,7 +159,7 @@ if(isset($_SESSION['userId']))
 					</div>
 					<?php if(isset($thisCamp['productPhoto'])){ ?>
 						<p class = "labela mggtop">Product Photo:</p>
-						<img src = "<?="https://s3-ap-southeast-1.amazonaws.com/cloudbreakr-campaign/product-photos/" .  $thisCamp['productPhoto'] ?>" class = "campmage">
+						<img src = "<?=$thisCamp['productPhoto'] ?>" class = "campmage">
 					<?php } ?>
 				</div>
 
