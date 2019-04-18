@@ -7,7 +7,7 @@
 		$endDate = time()-(86400*360);
 		$sql = "SELECT id, refId, facebook, youtube, instagram, title, businessId, createdAt, startDate, endDate, tier1Price, tier2Price, tier3Price
 			FROM jobs_campaign 
-			WHERE status = 'PUBLIC' AND isPrivate = 0 AND locationId = 1 AND acceptAt >= $endDate AND isRemoved IS null 
+			WHERE status = 'PUBLIC' AND isPrivate = 0 AND locationId = 1 AND acceptAt >= 1484571122 AND isRemoved IS null 
 			ORDER BY createdAt DESC";
 
 		$query = $mydb->query($sql);
@@ -41,7 +41,6 @@
 				FROM jobs_influencer
 				WHERE influencerId = ? AND status < 2
 				ORDER BY updatedAt DESC";
-
 		$stmt = $mydb->prepare($sql);
 		$stmt->bind_param('i',$id);
 		if($stmt->execute())
@@ -92,7 +91,7 @@
 	{
 		global $mydb;
 		$sql = "SELECT id, refId, facebook, youtube, instagram, title, businessId, createdAt, startDate, endDate, tier1Price, 				tier2Price, tier3Price FROM jobs_campaign
-				WHERE locationId = 1 AND acceptAt >= 1543896405 AND isRemoved IS null 
+				WHERE locationId = 1 AND acceptAt >= 1515142779 AND isRemoved IS null 
 				ORDER BY startDate ASC";
 
 		if($allCamps = $mydb->query($sql)->fetch_all(MYSQLI_ASSOC))

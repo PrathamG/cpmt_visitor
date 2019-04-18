@@ -1,51 +1,16 @@
 <?php
-	header('Content-Type: text/html; charset=utf-8');
-	$server = 'icm.cloudbreakr.com';
-	$user = 'cloudbreakr';
-	$password = 'Vbe4Bvy#vN*WcG';
-	$dbname = 'cloudbreakr_new';
+	include 'headfiles.php';
+	include 'backend/db_conn.php';
 
-	$mydb = new mysqli($server, $user, $password, $dbname);
-
-	if($mydb->connect_error)
+	$sql = "SELECT * FROM influencer";
+	$influencer = $mydb->query($sql);
+	for($i = 0; $i < 60; $i++)
 	{
-		die("Connection failed: " . $mydb->connect_error);
-	}
-
-	$mydb->set_charset("utf8mb4");
-	if($_SERVER['REQUEST_METHOD'] == "POST")
-	{
-		$influencers = $_POST['influencers'];
-		$influencers = preg_split('/\r\n|\r|\n/', $influencers);
-		foreach($influencers as $influencer)
+		$thisInfluencer = $influencer->fetch_assoc();
+		if($i > 49)
 		{
-			if(strlen($influencer))
-			{
-				$sql = "SELECT id FROM influencer WHERE instagram = '$influencer'";
-				$result = $mydb->query($sql);
-				//print_r($result);
-				//echo $result->num_rows;
-				if($result->num_rows != 0)
-				{
-					echo $influencer . "<br>";
-				}
-				else
-				{
-					echo "invalid<br>";
-				}
-			}
+			echo $thisInfluencer["instagram"] . "<br>";	
 		}
-	}
-	else
-	{
-?>
-
-<form method = "post" action = "<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>">
-	<textarea name = "influencers" cols= "50" rows = "30" style = "overflow-y: scroll;"></textarea>
-	<br>
-	<button type="submit" class = 'submit-invite-list'>Submit</button>
-</form>
-
-<?php
+		
 	}
 ?>

@@ -137,7 +137,7 @@ if($_SESSION['adminUserId'] == 1350) //Verify admin logged in
 						<br>
 						<div class = "nopadding col-sm-12">
 							<p class = "labela">Product Photo:</p>
-							<img src = "<?="https://s3-ap-southeast-1.amazonaws.com/cloudbreakr-campaign/product-photos/" . $thisCamp['productPhoto'] ?>" class = "campmage">
+							<img src = "<?=$thisCamp['productPhoto'] ?>" class = "campmage">
 						</div>
 						<?php } ?>
 					</div>

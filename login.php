@@ -38,6 +38,7 @@ if(isset($_SESSION['userId']))
 			$user = $stmt->get_result();
 			if($user->num_rows > 0)
 			{
+				echo $sql . " " . $username . " " . $pass;
 				$user = $user->fetch_assoc();
 
 				$userIgId = $user['ig_user_id'];
